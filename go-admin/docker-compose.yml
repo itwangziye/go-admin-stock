@@ -1,12 +1,12 @@
 version: '3.8'
 services:
   go-admin-api:
-    container_name: go-admin
-    image: go-admin:latest
+    container_name: go-admin-stock
+    image: go-admin-stock:latest
     privileged: true
     restart: always
     ports:
-      - 8000:8000
+      - 8100:8000
     volumes:
       - ./config/:/go-admin-api/config/
       - ./static/:/go-admin-api/static/
